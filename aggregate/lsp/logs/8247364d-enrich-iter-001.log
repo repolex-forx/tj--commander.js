@@ -1,0 +1,51 @@
+[2026-04-10T08:09:56Z] === ENRICH ITERATION 1 START | repo=tj/commander.js sha=8247364d ===
+[2026-04-10T08:09:56Z] [iter=1] PHASE START: enrich repo=tj/commander.js sha=8247364d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8247364d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8247364da749736570161e95682b07fc2d72497b.nq.gz
+[2026-04-10T08:10:03Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=81 MB
+[2026-04-10T08:10:09Z] [iter=1] AST store loaded triples=754751 load_secs=5 mem_mb=792 MB
+[2026-04-10T08:10:09Z] [iter=1] Step 2: Finding LSP targets mem_mb=792 MB
+[2026-04-10T08:10:10Z] [iter=1] LSP targets found call_sites=11569 imports=13 extends=11 implements=0 secs=1
+[2026-04-10T08:10:10Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=792 MB
+[2026-04-10T08:10:14Z] [iter=1] Position index built positions=49227 nodes_with_types=62068 secs=4 mem_mb=792 MB
+[2026-04-10T08:10:14Z] [iter=1] Step 3: Starting LSP resolution mem_mb=792 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T08:10:14Z] [iter=1] Resolving target type target_type=call_site count=11569
+[2026-04-10T08:10:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=1 resolved=0 errors=99 current=tests/command.parse.test.js
+[2026-04-10T08:11:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=2 resolved=0 errors=233 current=tests/command.help.test.js
+[2026-04-10T08:11:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=4 resolved=2 errors=353 current=tests/argument.variadic.test.js
+[2026-04-10T08:12:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=6 resolved=12 errors=565 current=examples/nestedCommands.js
+[2026-04-10T08:13:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=8 resolved=16 errors=678 current=tests/help.optionDescription.test.js
+[2026-04-10T08:15:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=11 resolved=25 errors=1185 current=tests/args.variadic.test.js
+[2026-04-10T08:16:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=13 resolved=25 errors=1313 current=tests/command.hook.test.js
+[2026-04-10T08:17:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=14 resolved=25 errors=1492 current=tests/help.sortOptions.test.js
+[2026-04-10T08:18:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=19 resolved=25 errors=1636 current=tests/helpGroup.test.js
+[2026-04-10T08:18:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=20 resolved=25 errors=1742 current=tests/command.addHelpText.test.js
+[2026-04-10T08:19:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=23 resolved=26 errors=1880 current=tests/options.twice.test.js
+[2026-04-10T08:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.8 files_done=27 resolved=26 errors=1983 current=tests/options.bool.test.js
+[2026-04-10T08:21:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=32 resolved=26 errors=2289 current=tests/help.style.test.js
+[2026-04-10T08:21:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=33 resolved=26 errors=2432 current=tests/useColor.test.js
+[2026-04-10T08:22:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=36 resolved=26 errors=2593 current=examples/alias.js
+[2026-04-10T08:23:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=42 resolved=29 errors=2774 current=tests/options.env.test.js
+[2026-04-10T08:24:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=43 resolved=29 errors=2881 current=examples/global-options-nested.js
+[2026-04-10T08:24:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=48 resolved=30 errors=3046 current=tests/command.option-misuse.test.js
+[2026-04-10T08:25:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=53 resolved=30 errors=3169 current=tests/options.variadic.test.js
+[2026-04-10T08:26:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=56 resolved=30 errors=3298 current=tests/help.padWidth.test.js
+[2026-04-10T08:26:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.6 files_done=62 resolved=30 errors=3412 current=tests/command.alias.test.js
+[2026-04-10T08:27:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=64 resolved=30 errors=3541 current=tests/command.allowUnknownOption.test.js
+[2026-04-10T08:27:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=68 resolved=30 errors=3650 current=tests/options.bool.combo.test.js
+[2026-04-10T08:28:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.3 files_done=73 resolved=37 errors=3765 current=tests/help.minWidthToWrap.test.js
+[2026-04-10T08:28:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=82 resolved=39 errors=3876 current=tests/esm-imports-test.mjs
+[2026-04-10T08:29:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=87 resolved=48 errors=4015 current=tests/command.allowExcessArguments.test.js
+[2026-04-10T08:29:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.0 files_done=91 resolved=49 errors=4132 current=lib/argument.js
+[2026-04-10T08:30:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=98 resolved=51 errors=4254 current=tests/command.registerClash.test.js
+[2026-04-10T08:31:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=105 resolved=52 errors=4396 current=tests/args.literal.test.js
+[2026-04-10T08:31:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=116 resolved=54 errors=4502 current=tests/help.commandTerm.test.js
+[2026-04-10T08:32:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.3 files_done=126 resolved=80 errors=4609 current=examples/options-defaults.js
+[2026-04-10T08:32:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=143 resolved=106 errors=4727 current=tests/command.commandHelp.test.js
+[2026-04-10T08:35:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.8 files_done=169 resolved=129 errors=5321 current=tests/fixtures-extensions/pm-try-ts.ts
+[2026-04-10T08:35:42Z] [iter=1] Target type resolved target_type=call_site resolved=129 errors=5321 secs=1528 mem_mb=792 MB
+[2026-04-10T08:35:42Z] [iter=1] Resolving target type target_type=import_statement count=13
+[2026-04-10T08:35:46Z] [iter=1] Target type resolved target_type=import_statement resolved=4 errors=0 secs=4 mem_mb=792 MB
+[2026-04-10T08:35:46Z] [iter=1] Resolving target type target_type=extends_clause count=11
+[2026-04-10T08:35:50Z] [iter=1] Target type resolved target_type=extends_clause resolved=11 errors=0 secs=4 mem_mb=792 MB
+[2026-04-10T08:35:56Z] [iter=1] Step 5: Writing final enrichment file triples=59688
+[2026-04-10T08:35:57Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/8247364da749736570161e95682b07fc2d72497b.nq.gz size_kb=1228
+[2026-04-10T08:35:57Z] [iter=1] PHASE END: enrich elapsed_s=1561 elapsed_min=26.0 total_triples=59688
